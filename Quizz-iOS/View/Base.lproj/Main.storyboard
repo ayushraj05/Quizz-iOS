@@ -99,6 +99,7 @@
                         <outlet property="false_buttom" destination="YdW-S5-0Rm" id="In8-cN-ZVs"/>
                         <outlet property="progress_barr" destination="9DW-YC-gx7" id="QFV-hE-L8W"/>
                         <outlet property="question_lable" destination="tTa-4h-fC6" id="nvz-ap-TPU"/>
+                        <outlet property="scoreLable" destination="eiN-Gm-NHl" id="fVx-ZB-xbw"/>
                         <outlet property="true_button" destination="MhN-5a-StO" id="c38-Bp-gbd"/>
                     </connections>
                 </viewController>

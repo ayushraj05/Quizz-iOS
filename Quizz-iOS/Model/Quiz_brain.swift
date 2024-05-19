@@ -34,10 +34,12 @@ struct Quiz_brain {
     ]
     
     var questionNumber = 0
+    var currentScore = 0
     
-    func checkAnswer(_ userAnswer: String) -> Bool {
+    mutating func checkAnswer(_ userAnswer: String) -> Bool {
         if userAnswer == quiz[questionNumber].answer{
             //right ans :)
+            currentScore += 1
             return true
         }
         else{
@@ -59,6 +61,11 @@ struct Quiz_brain {
         }
         else{
             questionNumber = 0
+            currentScore = 0
         }
+    }
+    
+    mutating func getScore() -> Int{
+        return currentScore
     }
 }
